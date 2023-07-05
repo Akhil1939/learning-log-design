@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Form, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-text-field',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./text-field.component.css']
 })
 export class TextFieldComponent {
+@Input() parentForm:FormGroup = new FormGroup({});
+@Input() controlName: string =''
+@Input() label: string ='';
+@Input() placeholder: string ='';
+@Input() type: string ='text';
+@Input() id:string ='';
 
 }
