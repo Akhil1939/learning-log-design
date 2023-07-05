@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TextFieldComponent } from 'src/app/components/controls/form/text-field/text-field.component';
 
 
@@ -9,6 +10,9 @@ import { TextFieldComponent } from 'src/app/components/controls/form/text-field/
     
   ],
   imports: [
+    FormsModule,
+    ReactiveFormsModule,
+    
     
   ],
   exports: [
